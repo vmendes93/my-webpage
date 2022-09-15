@@ -1,0 +1,216 @@
+baseURL = "https://vmendes.xyz/"
+languageCode = "en-us"
+theme = "aafu"
+
+[params]
+    title = "Vinicius Mendes' Personal Webpage"
+    author = "Vinicius Mendes"
+    description = "Welcome to my homepage"
+    copyright = "Powered by [Hugo](https://gohugo.io/) | [aafu](https://github.com/darshanbaral/aafu) by [darshan](https://www.darshanbaral.com/)"
+
+    [params.theme]
+        # Available themes are 'light', 'dark', 'ocean', and 'pinkish'
+        mainTheme = "dark"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = false
+        singlePage = false
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Vinicius Mendes"
+        tagline = "Data Scientist, Geologist"
+        location = "Arceburgo, MG"
+        photo = "profile.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+            icon = "fab fa-linkedin-in"
+            url = "https://www.linkedin.com/in/viniciustm/"
+            title = "LinkedIn"		
+        #[[params.social.list]]
+        #    icon = "fab fa-stack-overflow"
+        #    url = "#"
+        #    title = "StackOverflow"
+        [[params.social.list]]
+            icon = "fab fa-github"
+            url = "https://github.com/vmendes93"
+            title = "GitHub"
+        [[params.social.list]]
+            icon = "fab fa-twitter"
+            url = "https://twitter.com/xerxes_tm"
+            title = "Twitter"
+        #[[params.social.list]]
+        #    icon = "ai ai-google-scholar"
+        #    url = "#"
+        #    title = "Google Scholar"
+        #[[params.social.list]]
+        #    icon = "fab fa-researchgate"
+        #    url = "#"
+        #    title = "ResearchGate"
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    #[[params.showInAccordion]]
+    #   item = "publication"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+
+    [params.aboutme]
+        title = "About Me"
+        icon = "fas fa-user"
+        description = "I'm a data scientist, geologist, and tech enthusiast. I work creating predictive models for water well production, and I also have experience in GIS and spatial analysis and I'm interested in working with time-series and chronological data."
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+
+        [[params.experience.list]]
+            position = "Geologist"
+            dates = "2021 - *Present*"
+            company = "Momesso's Well Drillings and Pumps"
+            url = "https://momessomotores.com.br/"
+            details = "Main technical manager for the geology sector, and responsible for coordinating gathered data with the company's IT sector."
+        [[params.experience.list]]
+            position = "Jr. Geologist"
+            dates = "2017 - 2020"
+            company = "Self-employed"
+            details = "GIS and environmental consultant for landowners in upstate São Paulo. Map creation and environmental risk diagnosis."
+        [[params.experience.list]]
+            position = "Research Assistant"
+            dates = "2013 - 2016"
+            company = "National Oil and Gas Agengy Intern Program - ANP"
+            details = "Provided support in assisted in the development of petrophysical models and the creation of rock porosity routines for pre-salt related projects."
+        
+        
+
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+        [[params.education.list]]
+            degree = "Graduate Diploma in Data Science & Machine Learning"
+            college = "Let's Code Academy"
+            dates = "2021 - 2023"
+        #[[params.education.list]]
+        #    degree = "M.S. in Subject"
+        #    college = "University of State-City"
+        #    dates = "2013 - 2018"
+        #    thesis_title = "Effect of humans on other humans: a study of human behavior."
+        #    thesis_url = "#"
+        [[params.education.list]]
+            degree = "B.S. in Geology"
+            college = "State University of Campinas - UNICAMP"
+            dates = "2011 - 2017"
+
+    # Publication section
+    [params.publication]
+        title = "Publications"
+        icon = "fas fa-book"
+        #The order below determines the order in which the items appear in "Publications" section
+        format = ["date", "authors", "title", "journal"]
+        #If you don't want to group publications, comment the line below by adding # at the beginning
+        types = ["Journal Articles", "Proceedings"]
+
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            url = "#"
+            type = "Journal Articles"
+
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            url = "#"
+            type = "Journal Articles"
+		
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            url = "#"
+            type = "Proceedings"
+
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "Math and Science with Python"
+            url = "https://github.com/vmendes93/Math-and-Science-with-Python"
+            description = "Long term project that aims to create a free and simplified source of math, science, and programming for people outside of STEM."
+        [[params.project.list]]
+            title = "SAFE - Scientific Articles for Everyone"
+            url = "#"
+            description = "A nonprofit and voluntary project where I collect scientific articles and essays and translate them from English to Portuguese."
+        #[[params.project.list]]
+        #    title = "Project 3"
+        #    url = "#"
+        #    description = "Description of the project"
+        #[[params.project.list]]
+        #    title = "Project 4"
+        #    url = "#"
+        #    description = "Description of the project"
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "GIS"
+            skillrating = 90
+        [[params.skill.list]]
+            skill = "Python, Linux, Statiscs"
+            skillrating = 80
+        [[params.skill.list]]
+            skill = "Machine Learning"
+            skillrating = 75
+        [[params.skill.list]]
+            skill = "HTML, CSS"
+            skillrating = 50
+
+    # Hobby section
+    [params.hobby]
+        title = "Hobbies"
+        icon = "fas fa-gamepad"
+
+        [[params.hobby.list]]
+            hobby = "Gaming"
+        [[params.hobby.list]]
+            hobby = "Cooking"
+        [[params.hobby.list]]
+            hobby = "Reading"
